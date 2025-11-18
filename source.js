@@ -22,3 +22,4 @@ const getIndexToIns = (anArray, aNumber) => {
 };
 
 console.log(getIndexToIns([7, 5, 4, 12, 15, 8], 10));
+console.log(getIndexToIns([1, 2, 3, 4], 1.5));

@@ -69,7 +69,15 @@ console.log(getIndexToIns([1, 2, 3, 4], 1.5));
 console.log(getIndexToIns([20, 3, 5], 19));
 console.log(getIndexToIns([3, 10, 5], 11));
 ```
+## Getting Started
+### Prerequisites
+`Node.js` (any recent LTS version should work)
 
+Clone the repository
+```bash
+git clone https://github.com/karianjahi/sorted-index-finder.git
+cd sorted-index-finder
+```
 ## Usage
 - Run the demo script:
 

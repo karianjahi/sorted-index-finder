@@ -18,8 +18,12 @@ getIndexToIns([20, 3, 5], 19) should return 2 because after sorting to [3, 5, 20
 
 const getIndexToIns = (anArray, aNumber) => {
   anArray.sort((a, b) => a - b); // sort the array from smallest to largest
-  return anArray.findIndex((num) => num >= aNumber);
+  const index = anArray.findIndex((num) => num >= aNumber);
+  if (index == -1) return anArray.length;
+  return index
 };
 
 console.log(getIndexToIns([7, 5, 4, 12, 15, 8], 10));
 console.log(getIndexToIns([1, 2, 3, 4], 1.5));
+console.log(getIndexToIns([20, 3, 5], 19));
+console.log(getIndexToIns([3, 10, 5], 11));
